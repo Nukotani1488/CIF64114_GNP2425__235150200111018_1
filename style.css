@@ -1,0 +1,189 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:after {
+	clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+header, nav, footer {
+	display: block;
+}
+
+img, a {
+	vertical-align: baseline;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	margin-top: 23px;
+	float: right;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav a {
+	color: inherit;
+	margin-left: 20px;
+	text-align: right;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.7;
+	padding: 0;
+}
+
+a:hover {
+	color: #b4b2c4;
+}
+
+.wrapper-masthead {
+	margin-bottom: 50px;
+}
+
+.wrapper-masthead .container {
+	background: #4d4d64;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 0 20px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 10px;
+	max-width: 740px;
+}
+
+.masthead {
+	color: #EEE;
+	padding: 20px 0;
+}
+
+.masthead img {
+	border-radius: 10px;
+}
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+
+.site-avatar {
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
+}
+
+.site-info, .site-name, #main {
+	color: inherit;
+}
+
+.site-info {
+	float: left;
+}
+
+.site-name {
+	font-size: 28px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.site-description {
+	color: #888;
+}
+
+#main {
+	color: #333;
+}
+
+::selection {
+	color: #FFF;
+	background: #b4b2c4;
+}
+
+.date {
+	color: #888;
+	font-style: italic;
+}
+
+.preview, .post-image {
+	border-radius: 20px;
+}
+
+.preview {
+	height: 300px;
+	overflow: hidden;
+}
+
+.post {
+	margin: 20px 20px;
+}
+
+.post h1 {
+	font-size: 30px;
+}
+
+.entry p {
+	line-height: 170%;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 22px;
+	padding: 10px 0;
+}
+
+@media screen and (max-width: 640px) {
+	.masthead {
+		text-align: center;
+	} 
+
+	nav {
+		float: none;
+		margin-top: 9px;
+		display: block;
+		font-size: 16px;
+	}  
+
+	nav a { 
+		margin: 0 10px; 
+	} 
+
+	.site-description {
+		margin: 3px 0;
+	} 
+
+	.site-info {
+		float: none;
+		display: block; 
+		margin: 0 auto; 
+	}
+
+	.site-avatar {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
